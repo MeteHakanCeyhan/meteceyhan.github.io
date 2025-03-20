@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 1</title>
+</head>
+<body>
+    <h1>INFORMATION ABOUT ME</h1>
+    <p>Hello everyone!</p>
+    <p>Hello everyone, I am Mete Hakan Ceyhan. I was born on August 1, 2004, in Adana. I am the eldest child in a family with two children. I completed my education from primary school to high school at Özel Adana Final Schools, and I graduated from Final Science High School with the third-place award. I took the university entrance exam twice, and in my second attempt, I earned a spot in the Department of Electrical and Electronics Engineering at Hacettepe University, ranking 12th. I am currently in the second semester of my first year. I have briefly introduced myself, and I hope this text contains sufficient information.</p>
+    
+    <h2>HOMEWORK 1</h2>
+    <h3>Q1 - The Preparation Process Of My Website</h3>
+    <p>To be honest, since this was my first time opening a website with my own efforts, I had a little difficulty while doing it, but I enjoyed every moment of difficulty thanks to the effort I put in and the information I received. While creating my site, I transferred the codes I wrote to the Word file using Dev C and CodeBlock applications. I turned these into regular texts, then I created my page on GitHub by turning this text into an index.html file. However, for the beginning of a professional look, I obtained a QR code from one of the QR code sites that reached the URL of my site and added it to my report in my file with my link.</p>
+    
+    <p>My website link: <a href="https://metehakanceyhan.github.io/meteceyhan.github.io/" target="_blank">https://metehakanceyhan.github.io/meteceyhan.github.io/</a></p>
+    <p>QR Code:</p>
+    <img src="QR HW1.jpg" alt="QR Code">
+    
+    <h3>Q2</h3>
+    <pre>
+<code>
+#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+ 
+int main()
+{
+    int integer1;
+    int integer2;
+    int sum;
+ 
+    printf("Enter first integer\n");
+    scanf("%d", &integer1);
+ 
+    printf("Enter second integer\n");
+    scanf("%d", &integer2);
+ 
+    sum = integer1 + integer2;
+ 
+    printf("Sum is %d\n", sum);
+ 
+    return 0;
+}
+</code>
+</pre>
+
+    <h3>Q3</h3>
+    <pre>
+<code>
+#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+int main()
+{
+    float popularity;
+    float size;
+    float homeValue;
+    printf("Enter popularity:\n");
+    scanf("%f", &popularity);
+    printf("Enter size:\n");
+    scanf("%f", &size);
+    homeValue = (popularity * popularity * popularity + size * size) * 1000;
+    printf("Home value is:%f\n", homeValue);
+    return 0;
+}
+</code>
+</pre>
+
+    <h3>Q4 A</h3>
+    <pre>
+<code>
+#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+int computeHomeValue(int popularity, int size)
+{
+    return (popularity * popularity * popularity + size * size) * 1000;
+}
+int main()
+{
+    int popularity;
+    int size;
+    int homeValue;
+    printf("Enter popularity:\n");
+    scanf("%d", &popularity);
+    printf("Enter size:\n");
+    scanf("%d", &size);
+    homeValue = computeHomeValue(popularity, size);
+    printf("Home Value is %d", homeValue);
+    return 0;
+}
+</code>
+</pre>
+
+    <h3>Q4 B</h3>
+    <pre>
+<code>
+#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+void computeHomeValue(void)
+{
+    int popularity;
+    int size;
+    int homeValue;
+    printf("Enter popularity:");
+    scanf("%d", &popularity);
+    printf("Enter size:");
+    scanf("%d", &size);
+    homeValue = (popularity * popularity * popularity + size * size) * 1000;
+    printf("Home value is:%d\n", homeValue);
+}
+int main()
+{
+    computeHomeValue();
+    return 0;
+}
+</code>
+</pre>
+</body>
+</html>
